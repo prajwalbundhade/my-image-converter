@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Image Converter Tool | Convert Images to JPEG, PNG, or WebP</title>
+  <meta name="description"
+    content="Easily convert your images to JPEG, PNG, or WebP format with our free online image converter tool. Choose from a range of output formats to optimize your images for the web.">
+</head>
+<header>
+  <nav>
+    <div id="logo">My Converter</div>
+    <button id="toggler">Menu</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+
+  <div class="form-container">
+
+    <form id="converter-form">
+      <label for="input-image">Input image:</label>
+      <input type="file" id="input-image" class="box" accept="image/*">
+      <br>
+      <label for="output-format">Output format:</label>
+      <select class="box" id="output-format">
+        <option value="jpeg">JPEG</option>
+        <option value="png">PNG</option>
+        <option value="webp">WebP</option>
+      </select>
+      <br>
+      <button type="submit" class="form-btn">Convert</button>
+      <br>
+      <div id="preview"></div>
+      <button id="download-button" class="form-btn" style="display:none">Download</button>
+    </form>
+
+  </div>
+  <div class="footer">
+    <footer>
+      <p>Copyright 2022 My Image Converter</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <style>
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 0.8em;
+        text-align: center;
+      }
+
+      footer nav {
+        display: flex;
+        justify-content: center;
+      }
+
+      footer nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      footer nav ul li {
+        margin: 0 0.5em;
+      }
+
+      footer nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.9em;
+      }
+
+      footer nav ul li a:hover {
+        text-decoration: underline;
+      }
+    </style>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

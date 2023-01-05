@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us | My Image Converter</title>
+    <meta name="description" content="Need to get in touch with My Image Converter? Contact us via email, phone, or use the form on our Contact page to send us a message. We are always happy to help with any questions or concerns you may have.">
+</head>
+<header>
+    <nav>
+        <div id="logo">My Converter</div>
+        <button id="toggler">Menu</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+</header>
+<body>
+    <div class="form-container">
+        <form style="height: 500px;">
+            <h2 class="title">Contact Us</h2>
+            <p>
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" class="box" name="name" required>
+            </p>
+            <p>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" class="box" name="email" required>
+            </p>
+            <p>
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message" class="box" required></textarea>
+            </p>
+             <center> <button type="submit" class="btn">Send</button></center>
+            
+          </form>
+    </div>
+    <div class="footer">
+        <footer>
+          <p>Copyright 2022 My Image Converter</p>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </footer>
+        
+        <style>
+        footer {
+          background-color: #333;
+          color: #fff;
+          padding: 1em;
+        }
+        
+        footer p {
+          margin: 0;
+          font-size: 0.8em;
+          text-align: center;
+        }
+        
+        footer nav {
+          display: flex;
+          justify-content: center;
+        }
+        
+        footer nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+        
+        footer nav ul li {
+          margin: 0 0.5em;
+        }
+        
+        footer nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 0.9em;
+        }
+        
+        footer nav ul li a:hover {
+          text-decoration: underline;
+        }
+        </style>
+        
+      </div>
+      <!-- for toggler -->
+   <script>
+    const toggler = document.getElementById("toggler");
+const navLinks = document.querySelector("nav ul");
+
+toggler.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+   </script>
+      
+    </body>  
+    </html>
